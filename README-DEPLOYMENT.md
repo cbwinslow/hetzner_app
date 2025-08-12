@@ -40,6 +40,22 @@ cd /opt/supabase-super-stack
 sudo ./start-platform.sh
 ```
 
+### Optional: Caddy with Cloudflare TLS
+To automatically provision TLS certificates through Cloudflare, configure Caddy:
+
+```bash
+export DOMAIN=opendiscourse.net
+export LETSENCRYPT_EMAIL=you@example.com
+export CLOUDFLARE_API_TOKEN=your_cloudflare_api_token
+sudo ./scripts/22_caddy_cloudflare_setup.sh
+```
+
+For a one-click installation that runs the Caddy setup and full deployment:
+
+```bash
+sudo ./install_all.sh
+```
+
 ### 4. Monitor AI Agents
 ```bash
 sudo ./monitor-agents.sh
