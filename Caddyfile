@@ -1,0 +1,10 @@
+{
+    email {$LETSENCRYPT_EMAIL}
+}
+
+{$DOMAIN} {
+    tls {
+        dns cloudflare {$CLOUDFLARE_API_TOKEN}
+    }
+    reverse_proxy 127.0.0.1:8080
+}

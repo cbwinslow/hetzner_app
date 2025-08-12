@@ -10,6 +10,8 @@ SCRIPTS = [
     pathlib.Path("post-deploy-setup.sh"),
     pathlib.Path("push_to_remotes.sh"),
     pathlib.Path("tests/test_deploy.sh"),
+    pathlib.Path("scripts/22_caddy_cloudflare_setup.sh"),
+    pathlib.Path("install_all.sh"),
 ]
 
 @pytest.mark.parametrize("script", SCRIPTS, ids=[str(s) for s in SCRIPTS])
