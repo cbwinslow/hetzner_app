@@ -109,6 +109,19 @@ Your application is now fully deployed and operational!
 
 ---
 
+## TUI Service Menu
+
+An experimental text-based interface is available for running common setup
+tasks and launching optional service containers.
+
+```bash
+python scripts/service_menu.py
+```
+
+Use the arrow keys to navigate and press Enter to run the selected action.
+
+---
+
 ## Usage Guide
 
 -   **Main Application:** `https://your-domain.com`
