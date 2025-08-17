@@ -107,6 +107,10 @@ This is a one-time setup to initialize the database and get your unique Supabase
 
 Your application is now fully deployed and operational!
 
+## CI/CD via GitHub Actions
+
+Automated deployments are provided by the `deploy.yml` workflow. The pipeline runs linting and tests, deploys the stack to a remote host over SSH using `deploy.sh` and Docker Compose, and verifies https://opendiscourse.net after the deployment. Configure `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_KEY`, and `DEPLOY_PATH` secrets to enable this workflow.
+
 ---
 
 ## TUI Service Menu
@@ -124,12 +128,12 @@ Use the arrow keys to navigate and press Enter to run the selected action.
 
 ## Usage Guide
 
--   **Main Application:** `https://your-domain.com`
--   **API Documentation:** `https://api.your-domain.com/docs`
--   **AI Prototyping Lab (Flowise):** `https://flowise.your-domain.com`
--   **Workflow Automation (n8n):** `https://n8n.your-domain.com`
--   **LLM Observability (Langfuse):** `https://langfuse.your-domain.com`
--   **Observability (Jaeger):** `https://jaeger.your-domain.com`
--   **Traefik Dashboard:** `https://traefik.your-domain.com`
+-   **Main Application:** `https://opendiscourse.net`
+-   **API Documentation:** `https://api.opendiscourse.net/docs`
+-   **AI Prototyping Lab (Flowise):** `https://flowise.opendiscourse.net`
+-   **Workflow Automation (n8n):** `https://n8n.opendiscourse.net`
+-   **LLM Observability (Langfuse):** `https://langfuse.opendiscourse.net`
+-   **Observability (Jaeger):** `https://jaeger.opendiscourse.net`
+-   **Traefik Dashboard:** `https://traefik.opendiscourse.net`
 
 
