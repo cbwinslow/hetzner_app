@@ -42,7 +42,7 @@ jobs:
             set -e
             cd ${{ secrets.DEPLOY_PATH }}
             git pull
-            sudo bash deploy.sh
+            bash deploy.sh
             APP_ROOT=$(sudo bash -lc 'source config.sh; echo $APP_ROOT')
             sudo docker-compose -f "$APP_ROOT/docker-compose.yml" up -d
 
